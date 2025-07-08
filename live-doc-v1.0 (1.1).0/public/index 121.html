@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Your CSS styles here */
+    .banner {
+      position: relative;
+      width: 100%;
+      text-align: center; /* Align text to the left */
+      padding: 0px; /* Increase padding for better spacing */
+    }
+     /* Speech animation */
+     .speech-animation {
+      animation: speakAnimation 1s infinite alternate;
+    }
+
+   
+    .chat-banner {
+      position: absolute;
+      bottom: 100px; /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: none;
+      border-radius: 15px; /* Add border radius for a more professional look */
+    }
+    
+    .banner-content {
+      margin-right: 10px; /* Adjust margin for better spacing */
+    }
+    
+    .btn-chat {
+      margin-top: 20px; /* Add some space between text and button */
+    }
+
+    /* Speech animation */
+    .speech-animation {
+      animation: speakAnimation 1s infinite alternate;
+    }
+
+    @keyframes speakAnimation {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Split the banner into two parts */
+    .banner-left,
+    .banner-right {
+      width: 50%;
+      float: left;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .mouth {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: #B0C4DE;
+    bottom: 560px; /* Adjust as needed */
+    left: 53%;
+    transform: translateX(-50%);
+    animation: moveMouth 1s infinite alternate; /* Corrected animation name */
+    z-index: 3;
+}
+
+@keyframes moveMouth {
+    0% {
+        height: 20px;
+    }
+    50% {
+        height: 30px;
+    }
+    100% {
+        height: 20px;
+    }
+}
+@keyframes moveAndFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .moving-text {
+      opacity: 0; /* Initially hide the text */
+      animation: moveAndFadeIn 2s ease forwards; /* Start the animation when the page loads */
+    }
+
+  </style>
+
+  <title>Livedoc | Landing, Responsive &amp; Business Template</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png" width="118" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+
+      </div>
+    </nav>
+    <section class="py-xxl-10 pb-0" id="home">
+      <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-bg.png);background-position:top center;background-size:cover;">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row min-vh-xl-100 min-vh-xxl-25">
+          <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end" style="position: relative;">
+            <div class="mouth"></div> <!-- Add the mouth directly here -->
+          <img id="robot" class="pt-7 pt-md-0 w-100 rounded-circle" src="robo.png" alt="hero-header" style="border-radius: 50%; margin-right: 20px; border: 2px solid #000; background-color: #000;" />
+
+        </div>
+        
+          <div class="col-md-7 col-xl-6 col-xxl-5 text-md-start text-center py-6">
+            <h1 class="fw-light font-base fs-6 fs-xxl-7 moving-text">We're <strong>determined </strong>for<br />your&nbsp;<strong>better life.</strong></h1>
+            <p class="fs-1 mb-5 moving-text">You can get the care you need 24/7 – be it online. </p>
+            <a class="btn btn-lg btn-primary rounded-pill" href="http://127.0.0.1:5000" role="button">Make an Appointment</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-5" id="departments">
+
+      <div class="container">
+      </div>
+      <!-- end of .container-->
+
+      <section class="py-xxl-10 pb-0" id="home">
+        <div class="bg-holder bg-size" style="background-position: top center; background-size: cover;">
+          <div class="banner" style="position: relative; overflow: hidden;">
+            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
+              <div class="banner-left">
+                <img class="pt-7 pt-md-0 w-100 " src="assets/img/gallery/robohand.png" alt="chat-icon" style="width: 250px; height: 500px; margin-left: 50px; border: 2px solid #63C5DA;  border-radius: 20px; position: relative; z-index: 2;">
+
+              </div>
+            </div>
+            <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('assets/img/gallery/bg-ban.png'); background-position: center; background-size: contain; filter: blur(10px);"></div>
+            <div class="chat-banner" style="position: relative; z-index: 1; background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 50px; max-width: 400px; margin: 20px auto; text-align: center;"> <!-- Adjust margin and alignment -->
+        <!-- Content for your chat banner goes here -->
+        <h2 class="moving-text">We will help you</h2>
+        <p>You can get the care you need 24/7 – be it online.</p>
+        <a class="btn btn-lg btn-primary rounded-pill btn-chat" href="#!" role="button">Make an Appointment</a>
+    </div>
+
+        </div>
+        </div>
+      </section>
+
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="vendors/@popperjs/popper.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/is/is.min.js"></script>
+  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="vendors/fontawesome/all.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap" rel="stylesheet">
+
+  <script>
+    function speak() {
+      var message = "Hello, I am Robo!. Your Personal healthcare companion. I can suggest the disease that you might have based on your symptoms. You can click the button to continue";
+      var speech = new SpeechSynthesisUtterance(message);
+      var mouth = document.createElement('div');
+      mouth.classList.add('mouth');
+      document.getElementById('robot').appendChild(mouth);
+  
+      speech.onend = function() {
+        setTimeout(function() {
+          mouth.remove();
+        }, 10); // Adjust the time as needed
+      };
+  
+      window.speechSynthesis.speak(speech);
+    }
+  
+    window.onload = function() {
+      speak(); // Trigger speak function once the window is fully loaded
+      var movingText = document.querySelector('.moving-text');
+      movingText.style.opacity = 1; // Make the text visible after the animation
+    };
+  </script>
+  
+  
+<script>
+    window.onload = function() {
+      speak(); // Trigger speak function once the window is fully loaded
+      var movingText = document.querySelector('.moving-text');
+      movingText.style.opacity = 1; // Make the text visible after the animation
+    };
+  </script>
+</body>
+
+</html>

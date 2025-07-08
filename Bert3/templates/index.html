@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Healthcare Chatbot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+</head>
+<body style="background-image: url('https://skil.ai/wp-content/uploads/2021/09/AI-Chatbots-For-Healthcare.-scaled.jpg'); background-size: cover; background-position: center;background-attachment: fixed;">
+    <div class="card">
+        <div id="header">
+            <h1>Healthcare Chatbot</h1>
+        </div>
+        <div id="message-section">
+            <div class="message" id="bot"><span id="bot-response">Hello! Please enter your symptoms. <br><b>Enter atleast 3 symtpoms</b></br></span></div>
+        </div>
+        <div id="input-section">
+            <input id="input" type="text" placeholder="Type your symptoms" autocomplete="off" autofocus="autofocus"/>
+            <button class="send" onclick="sendMessage()">
+                <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <p ><center><b>Note: Predictions may vary depending on the severity of your symptoms. Please consult a doctor for a proper diagnosis.</b></center></p>
+      </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
