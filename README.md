@@ -25,7 +25,7 @@ This is an AI-based healthcare chatbot that predicts **potential diseases** from
 ---
 ## ▶️ How to Run
 
-1. Open `bertflask.ipynb` using **Jupyter Notebook**
+1. Open `Bert Flask3.ipynb` using **Jupyter Notebook**
 2. Run all cells to:
    - Load the tokenizer and model
    - Input symptoms and get disease predictions
